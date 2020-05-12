@@ -1,0 +1,20 @@
+{{>header}}
+ <form>
+        <div class="form-group container jumbotron form">
+          <h1 style="font-weight: bold;" class="text-center">Find Weather <i class="fas fa-cloud-sun"></i></h1>
+          <div class="form-group w-50 mx-auto">
+          <input type="text" name="location" placeholder="Location" class="form-control" required>
+          </div>
+          <center><button type="submit" class="btn btn-primary btn-lg">Search</button></center>
+        </div>
+  </form>
+  <div class="jumbotron container-fluid" style="margin-bottom:10rem">
+    <div class="text-center">
+    <p id="data1" class="display-5 font-weight-bolder">Check your current Weather</p>
+    <p id="data2" class=" display-6 font-weight-bold"></p>
+    </div>
+  </div>
+{{>footer}}
+<script src="/js/client.js"></script>
+</body>
+</html>
