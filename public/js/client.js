@@ -7,8 +7,6 @@ weatherForm.addEventListener('submit',(e)=>{
     let location=input.value
     data1.textContent='Loading...'
     data2.textContent=''
-    data3.textContent=''
-    data4.textContent=''
     fetch('/weather?address='+location).then((res)=>{
     res.json().then((data)=>{
         if(data.error){
